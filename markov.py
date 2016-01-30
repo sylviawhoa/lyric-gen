@@ -16,10 +16,10 @@ def build_model(tokens, n):
 		else:
 			model[gram] = [next_token]
 	final_gram = tuple(tokens[len(tokens)-n:])
-	if final_gram in model:
-		model[final_gram].append(None)
-	else:
-		model[final_gram] = [None]
+	# if final_gram in model:
+	# 	model[final_gram].append(None)
+	# else:
+	# 	model[final_gram] = [None]
 	return model
 
 def generate(model, n, seed=None, max_iterations=100):
@@ -29,6 +29,8 @@ def generate(model, n, seed=None, max_iterations=100):
 		process is stopped. (This is to prevent infinite loops)""" 
 	if seed is None:
 		seed = random.choice(model.keys())
+	else:
+		seed = (seed,)
 	output = list(seed)
 	current = tuple(seed)
 	for i in range(max_iterations):
@@ -90,6 +92,26 @@ def word_level_generate(lines, n, count=14, max_iterations=100):
 	token_lines = [line.split() for line in lines]
 	generated = generate_from_token_lists(token_lines, n, count, max_iterations)
 	return [' '.join(item) for item in generated]
+
+def generate_model_from_token_lists(token_lines, n, count=14, max_iterations=100):
+	"""Generates text from a list of lists of tokens. This function is intended
+		for input text where each line forms a distinct unit (e.g., poetry), and
+		where the desired output is to recreate lines in that form. It does this
+		by keeping track of the n-gram that comes at the beginning of each line,
+		and then only generating lines that begin with one of these "beginnings."
+		It also builds a separate Markov model for each line, and then merges
+		those models together, to ensure that lines end with n-grams statistically
+		likely to end lines in the original text.""" 
+	beginnings = list()
+	models = list()
+	for token_line in token_lines:
+		beginning = token_line[:n]
+		beginnings.append(beginning)
+		line_model = build_model(token_line, n)
+		models.append(line_model)
+	combined_model = merge_models(models)
+	return combined_model
+
 
 if __name__ == '__main__':
 	import sys
