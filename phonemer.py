@@ -56,15 +56,52 @@ for line in open(file_name, 'r'):
 				word = word.replace(char, "")
 		song_syls += str(syllable_dict[word])
 	song_syls += '\n'
-	print song_syls
+#	print song_syls
 
-print song_syls
+# print song_syls
 
 
 # print phoneme_dict[test_word]
 # print syllable_dict[test_word]
 # print vowel_dict[test_word]
 
+
+def writenewline(current_line):
+	newsong_line = ""
+
+	# for each line create a string current_line of syllables in the input song
+	# and a string newsong_line of new lyrics
+	# pick words from a markov chain to match the syllables/emphasis in the current line 
+
+
+	c = len(current_line)
+#	limit = 0
+#	while (c > 0) and (limit < 5):			#for testing
+	while c > 0: 
+		# use markov function to choose a next word
+		nextword = markovchainword()
+#		nextword = "SYLVIA"			#for testing	
+
+		# get syllable string for next word
+		nextword_syl = syllable_dict[nextword]  
+		print nextword_syl
+		n = len(nextword_syl)
+		# if the next word chosen by the markov chain has the correct
+		# syllable count, it will be added to the new song lyrics
+		# otherwise a new word will be chosen 
+		if c > n:
+			for i in range(0,n-1):
+				if current_line[i] != nextword_syl[i]:
+					break
+				else:	
+					current_line = current_line[n:c]
+					newsong_line += nextword
+	
+		limit += 1
+#	return newsong_line 
+	print newsong_line
+
+writenewline("10010001010100")
 
 # TO DO: create signature for lyrics
 # for line in open(file_name, 'r'):
