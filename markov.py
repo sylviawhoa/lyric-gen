@@ -37,11 +37,14 @@ def generate(model, n, seed=None, max_iterations=100):
 		if current in model:
 			possible_next_tokens = model[current]
 			next_token = random.choice(possible_next_tokens)
-			if next_token is None: break
+			if next_token is None:
+				print 'next token is none'
+				break
 			output.append(next_token)
 			current = tuple(output[-n:])
 		else:
 			break
+	print 'output: ' + output[1]
 	return output
 
 def merge_models(models):
