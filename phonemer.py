@@ -112,14 +112,7 @@ def writenewline(current_line, prev_word):
 
 		# use markov function to choose a next word
 		nextword = next_word(prev_word.upper())
-		# print('next word: ' + nextword)
-		# while len(nextword.strip()) < 1:
-		# 	nextword = next_word(prev_word.upper())[1]
 
-		# 	# if there is no next word...
-		# 	if len(model[(prev_word, )]) <= 1:
-		# 		# shouldnt be totally random
-		# 		nextword = random.choice(model.keys())[0]
 		nextword_syl = ''
 		while len(nextword_syl) < 1:
 			try: 
@@ -127,18 +120,16 @@ def writenewline(current_line, prev_word):
 				nextword_syl = syllable_dict[nextword]
 			except:
 				nextword = next_word(random.choice(model.keys())[0].upper())
-				# nextword_syl = syllable_dict[nextword]
 
-			# break
-		n = len(nextword_syl)
+		next_syl_count = len(nextword_syl)
 		# if the next word chosen by the markov chain has the correct
 		# syllable count, it will be added to the new song lyrics
 		# otherwise a new word will be chosen 
-		if c > n:
-			for i in range(n):
+		if c > next_syl_count:
+			for i in range(next_syl_count):
 				if current_line[i] != nextword_syl[i]:
 					break
-			current_line = current_line[n:]
+			current_line = current_line[next_syl_count:]
 			newsong_line += nextword + ' '
 			c = len(current_line)
 			prev_word = nextword
@@ -166,19 +157,19 @@ for line in song_syls.split('\n'):
 		new_lyrics += new_line
 
 	else:
-		new_lyrics += '\n \n'
+		new_lyrics += '\n'
 	# new_lyrics += '\n'
 
 
-print new_lyrics
+# print new_lyrics
 
 # print every line of original followed by lines of new lyrics
-# index = 0
-# for line in song_lines.split('\n'):
-# 	print 'ORIG: ' + line`
-# 	print 'NEW: ' + new_lyrics.split('\n')[index]
-# 	index += 1
-# 	print '\n'
+index = 0
+for line in song_lines.split('\n'):
+	print 'ORIG: ' + line
+	print 'NEW: ' + new_lyrics.split('\n')[index]
+	index += 1
+	print '\n'
 
 # prev_word = "it"
 # nextword = next_word(prev_word.upper())[1]
