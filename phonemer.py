@@ -97,7 +97,7 @@ def writenewline(current_line):
 					current_line = current_line[n:c]
 					newsong_line += nextword
 	
-		limit += 1
+#		limit += 1
 #	return newsong_line 
 	print newsong_line
 
