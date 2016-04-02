@@ -2,122 +2,151 @@
 Generate new song lyrics with the same rhythm and words from a different source
 
 ### Usage example
-``python phonemer.py lyrics/dreams.txt``
+``python phonemer.py lyrics/patti.txt``
 
 ### Example output
 ```
-ORIG: Now here you go again, you say
-NEW:  FOR ANY LONG BEACH 
+ORIG: Take me now baby here as I am
+NEW:  IS PRETTY BUSY SELECTION WAS
 
 
-ORIG: You want your freedom
-NEW:  BUSINESS IN THE 
+ORIG: Pull me close, try and understand
+NEW:  FROM A WHEN CUT THE FOOD AND IT'S
 
 
-ORIG: Well who am I to keep you down
-NEW:  BECAUSE THE IMPROV ABOUT 
+ORIG: Desire is hunger is the fire I breathe
+NEW:  FOR CROCHET SUPPLIES THIS PLACE AND OUT LOOKS LIKE STRING
 
 
-ORIG: It's only right that you should
-NEW:  ITS ON THE DEEP DISH WITH 
+ORIG: Love is a banquet on which we feed
+NEW:  WITHOUT NOT WHAT HAPPENS WHEN SEATING
 
 
-ORIG: Play the way you feel it
-NEW:  AND FOR IS FINE BUT 
 
 
-ORIG: But listen carefully to the sound
-NEW:  ROCK BOTTOM EVEN THOUGH WE 
+ORIG: Come on now try and understand
+NEW:  THERE ALONG WITH A COUPLE OF
 
 
-ORIG: Of your loneliness
-NEW:  GAI PAN PIZZA 
+ORIG: The way I feel when I'm in your hands
+NEW:  COUPONS WHEN A GREAT OUT OF GIRLS THAN
 
 
-ORIG: Like a heartbeat drives you mad
-NEW:  SINCE I ONLY PLACE AND 
+ORIG: Take my hand come undercover
+NEW:  ROAD TURNED AND FALL A FRIENDS TO HAVE
 
 
-ORIG: In the stillness of remembering what you had
-NEW:  CUTE AND OTHER SEASONINGS ON THE DISH 
+ORIG: They can't hurt you now,
+NEW:  GREEN BEAN BURGER AND
 
 
-ORIG: And what you lost, and what you had, and what you lost
-NEW:  SITE INTO PROBLEMS ALSO BRING ME GOOD AND 
+ORIG: Can't hurt you now, can't hurt you now
+NEW:  AND ROMANO CHICKEN BUT THAT
 
 
-ORIG: 
-NEW: 
+ORIG: Because the night belongs to lovers
+NEW:  CHEAP BREAKFAST AND I TAKE YOUR TICKETS
 
 
-ORIG: Thunder only happens when it's raining
-NEW:  RECENTLY HAVEN'T BEEN TO BUY A 
+ORIG: Because the night belongs to lust
+NEW:  WHATEVER ERROR OF TELLING
 
 
-ORIG: Players only love you when they're playing
-NEW:  CLASSES IN BOSTON THERE ARE PRETTY 
+ORIG: Because the night belongs to lovers
+NEW:  AND DINES AT PM AND UNFRIENDLY
 
 
-ORIG: Say women they will come and they will go
-NEW:  IN ANY STORE IT'S BUILT THE BY THE 
+ORIG: Because the night belongs to us
+NEW:  OF FOOD IS READY IN THE PORTION
 
 
-ORIG: When the rain washes you clean, you'll know, you'll know
-NEW:  NOT REALLY GOOD TIME YOU'RE WITH RAISIN IT 
 
 
-ORIG: 
-NEW: 
+ORIG: Have I doubt when I'm alone
+NEW:  OF THE DISH HERE THAT CAN EXPECT
 
 
-ORIG: Now here I go again, I see the crystal visions
-NEW:  FROM WHAT YOU PASS AND THE GAMES WHICH WAS VERY 
+ORIG: Love is a ring, the telephone
+NEW:  WHICH IS ALIVE AND EVEN BEEN
 
 
-ORIG: I keep my visions to myself, it's only me
-NEW:  LIKE A RED MEAT SAME THING AFTER YEARS WE THOUGHT 
+ORIG: Love is an angel disguised as lust
+NEW:  AS I ORDERED THE RESTAURANT BUT
 
 
-ORIG: Who wants to wrap around your dreams and,
-NEW:  WOULD BE TAKEN OUT HOW CAN FIND 
+ORIG: Here in our bed until the morning comes
+NEW:  MANY GOOD SKILLS GREAT COMEDIANS ON THE
 
 
-ORIG: Have you any dreams you'd like to sell?
-NEW:  WAS AND TOLD THE WAITRESS AND COME 
+ORIG: Come on now try and understand
+NEW:  TOGETHER THAT IT SHOW STARTED
 
 
-ORIG: Dreams of loneliness,
-NEW:  FINALLY GOT 
+ORIG: The way I feel under your command
+NEW:  LIKE THEY ALSO SELL FRENCH TOAST WITH VEAL
 
 
-ORIG: Like a heartbeat, drives you mad
-NEW:  THAT REVIEW THIS PLACE TO 
+ORIG: Take my hand as the sun descends
+NEW:  FOR THE BATHROOM CONDITION OF
 
 
-ORIG: In the stillness of remembering, what you had,
-NEW:  FLAVOR MIGHT NOT NEW OR GET CHICKEN 
+ORIG: They can't touch you now,
+NEW:  THE CHICKEN AND I
 
 
-ORIG: And what you lost and what you had and what you lost
-NEW:  THE SHRIMP DISH IS NICE BECAUSE SHE GAVE ME IT 
+ORIG: Can't touch you now, can't touch you now
+NEW:  DUMP AT SINCE THE POOL ALL IN MINUTES
 
 
-ORIG: 
-NEW: 
+ORIG: Because the night belongs to lovers ...
+NEW:  TO THE PLACE THE CAJUN TACO WITH
 
 
-ORIG: Thunder only happens when it's raining
-NEW:  SERVICE WAS TOLD ME UP ON A 
 
 
-ORIG: Players only love you when they're playing
-NEW:  OF THE BATHROOMS AND I GOT THE 
+ORIG: With love we sleep
+NEW:  I REMEMBER
 
 
-ORIG: Women, they will come and they will go
-NEW:  LOWE'S BEATS MONROEVILLE DIDN'T GIVE 
+ORIG: With doubt the vicious circle
+NEW:  IS THEIR DOING AND I EXPECTED
 
 
-ORIG: When the rain washes you clean, you'll know
-NEW:  DATE NIGHT AND BULLS FANS OF BAKING 
+ORIG: Turn and burns
+NEW:  SANDAL WHICH
+
+
+ORIG: Without you I cannot live
+NEW:  OUR REFILLS MIND TO CHOOSE
+
+
+ORIG: Forgive, the yearning burning
+NEW:  SUPPOSE WE DIDN'T SAY THAT
+
+
+ORIG: I believe it's time, too real to feel
+NEW:  FANS THINK IT IN YOUR FOOD YOU WILL LOOK
+
+
+ORIG: So touch me now, touch me now, touch me now
+NEW:  OF AS A NEW DECOR IS GOOD TIME CINNAMON
+
+
+ORIG: Because the night belongs to lovers ...
+NEW:  GEM OF RETAIL STORES IT IS THAT THEY
+
+
+
+
+ORIG: Because tonight there are two lovers
+NEW:  SEA BASS GUITAR AND CHILI PASTE AND
+
+
+ORIG: If we believe in the night we trust
+NEW:  ECLECTIC AND HAVING EATEN HERE
+
+
+ORIG: Because tonight there are two lovers ...
+NEW:  GAMES ARE A PREFERRED SHOP AT THEMED NAME
+
 ```

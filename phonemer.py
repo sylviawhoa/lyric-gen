@@ -69,8 +69,8 @@ for line in open(file_name, 'r'):
 			song_syls += str(syllable_dict[word])
 			# break
 		except:
-			print 'no word: '
-
+			#print 'no word: '
+			print ''
 	song_syls += '\n'
 
 # print song_syls
@@ -89,7 +89,7 @@ def next_word(word):
 	ret = markov.generate(model, n, seed=word, max_iterations=1)
 	while ( (len(ret) < 2) or (len(ret[1].strip()) <1) ):
 		ret = markov.generate(model, n, max_iterations=1)
-	print 'next word: ' + ret[1].strip()
+	#print 'next word: ' + ret[1].strip()
 	return ret[1].strip()
 
 
@@ -137,8 +137,9 @@ def writenewline(current_line, prev_word):
 			break
 		# limit += 1
 	#	print current_line
-#	return newsong_line 
-	print 'c = ' + str(c)
+	newsong_line += nextword
+	return newsong_line 
+	#print 'c = ' + str(c)
 	return newsong_line
 
 # writenewline("110010001010100", "THEY")
@@ -166,8 +167,9 @@ for line in song_syls.split('\n'):
 # print every line of original followed by lines of new lyrics
 index = 0
 for line in song_lines.split('\n'):
-	print 'ORIG: ' + line
-	print 'NEW: ' + new_lyrics.split('\n')[index]
+	if len(line)>1:
+		print 'ORIG: ' + line
+		print 'NEW: ' + new_lyrics.split('\n')[index]
 	index += 1
 	print '\n'
 
